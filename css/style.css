@@ -1073,6 +1073,22 @@ ul{margin-bottom: 0;}
 	font-size: 18px;
 }
 
+/* Select Distributor */
+.selectedState_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.selectedState_list li {
+    color: #000;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
 
 @media (min-width: 1200px) {
 	
