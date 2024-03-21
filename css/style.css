@@ -963,6 +963,7 @@ ul{margin-bottom: 0;}
 /* Popup Css */
 .modal-dialog {
     max-width: 1096px;
+	max-width: 95%;
 }
 
 .modal-content {
@@ -1134,6 +1135,13 @@ ul{margin-bottom: 0;}
     column-gap: 12px;
     font-weight: 500;
     margin: 8px 0;
+}
+
+
+@media (min-width: 1200px) {
+	.toggleMenu {
+		display: none;
+	}
 }
 
 @media (max-width: 1399.98px) {
