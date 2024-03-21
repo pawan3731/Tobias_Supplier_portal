@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- Bootstrap icon -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <!-- Bootstrap CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <link rel="stylesheet" href="fonts/stylesheet.css">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <title>Step1</title>
+   </head>
+   <body>
+      <div class="main-wrap">
+        <div class="container">
+            <form id="msform">
+                <!-- progressbar -->
+                <div class="progress form_process">
+                    <div class="progress-bar progress-bar-animated" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+
+                <!--  fieldset 1 Start-->
+                <fieldset>
+                    <div class="form-wrap">
+                        <div class="form-head">
+                            <h6>Step 1/7</h6>
+                            <h4>Event Location</h4>
+                        </div>
+                        <div class="form-body">
+                            <div class="row gy-3">
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label">Brand Category</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Category</option>
+                                        <option value="1">Category One</option>
+                                        <option value="2">Category Two</option>
+                                        <option value="3">Category Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label">Brand Name</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Name</option>
+                                        <option value="1">Name One</option>
+                                        <option value="2">Name Two</option>
+                                        <option value="3">Name Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <h5 class="ff-baoudisplay mt-5 mb-0">Location</h5>
+                            
+                            <div class="select_location" id="regularAccordionRobots">
+                                    <div class="d-flex align-items-center gx-3 gy-3 gy-md-0 justify-content-lg-start justify-content-center mb-4">
+                                        <label for="radio-card-1" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
+                                            <input type="radio" name="radio-card" id="radio-card-1" checked />
+                                            <div class="card-content-wrapper">
+                                                <span class="check-icon"></span>
+                                                <span class="location_name">I Have a Venue in Mind</span>
+                                            </div>
+                                        </label>
+
+                                        <label for="radio-card-2" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseSecond" aria-expanded="false" aria-controls="regularCollapseSecond">
+                                            <input type="radio" name="radio-card" id="radio-card-2" />
+                                            <div class="card-content-wrapper">
+                                                <span class="check-icon"></span>
+                                                <span class="location_name">I Need Assistance Finding a Venue</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <!-- Radio_btn Collapse Content Start -->
+                                        <!-- First_rdo_Btn Content Start -->
+                                        <div class="accordion-collapse collapse show" id="regularCollapseFirst" aria-labelledby="regularHeadingFirst" data-bs-parent="#regularAccordionRobots">
+                                            <label class="fw-500 theme_label" for="Venue">Venue</label>
+                                            <input class="w-100 theme_input" id="Venue" type="text" placeholder="Type to search venue name" />
+
+                                            <div class="form-check venue_radio_select check_radioBtn">
+                                                <label class="form-check-label" for="venueDatabase">
+                                                    <input class="mt-0 form-check-input shadow-none " type="checkbox" value="" id="venueDatabase" />
+                                                    Can’t find the venue in database
+                                                </label>
+                                            </div>
+
+                                            <div class="hidden_section">
+                                                <h5 class="ff-baoudisplay mt-4 pt-2 mb-3 text-capitalize">Suggest Venue to BUUZ Database</h5>
+                                                <div class="row gy-3 gx-3">
+                                                    <div class="col-12">
+                                                        <label class="fw-500 theme_label" for="name">Establishment Name</label>
+                                                        <input class="w-100 theme_input" id="name" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="" class="form-label">Country</label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>United States</option>
+                                                            <option value="1">Country One</option>
+                                                            <option value="2">Country Two</option>
+                                                            <option value="3">Country Three</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-8">
+                                                        <label class="fw-500 theme_label" for="Address">Street Address</label>
+                                                        <input class="w-100 theme_input" id="Address" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4">
+                                                        <label class="fw-500 theme_label" for="Apt">Suite/Apt.</label>
+                                                        <input class="w-100 theme_input" id="Apt" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="fw-500 theme_label" for="City">City</label>
+                                                        <input class="w-100 theme_input" id="City" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="State">State</label>
+                                                        <input class="w-100 theme_input" id="State" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="Zipcode">Zipcode.</label>
+                                                        <input class="w-100 theme_input" id="Zipcode" type="text" placeholder="" />
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="fw-500 theme_label" for="mobile">Establishment/Profile phone number</label>
+                                                        <input  class="w-100 theme_input" id="mobile" type="tel" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- First_rdo_Btn Content End -->
+
+                                        <!-- Second_rdo_Btn Content Start -->
+                                        <div class="accordion-collapse collapse" id="regularCollapseSecond" aria-labelledby="regularHeadingSecond" data-bs-parent="#regularAccordionRobots">
+                                            <div class="row gy-3">
+                                                <div class="col-lg-6">
+                                                    <label for="" class="form-label">City</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Select City</option>
+                                                        <option value="1">City One</option>
+                                                        <option value="2">City Two</option>
+                                                        <option value="3">City Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="" class="form-label">State</label>
+                                                    <select class="form-select" aria-label="">
+                                                        <option selected>Select State</option>
+                                                        <option value="1">State One</option>
+                                                        <option value="2">State Two</option>
+                                                        <option value="3">State Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 gx-3 gy-3 align-items-end">
+                                                <div class="col-md-10">
+                                                    <label for="" class="form-label">Select Ideal Venue Type</label>
+                                                    <select class="form-select" aria-label="">
+                                                        <option selected>Select type</option>
+                                                        <option value="1">Type One</option>
+                                                        <option value="2">Type Two</option>
+                                                        <option value="3">Type Three</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0)" class="theme_btn"><i class="bi bi-plus-lg"></i> More</a>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label class="fw-500 theme_label" for="textarea">Describe the type of venue you are looking for</label>
+                                                    <textarea id="textarea" class="theme_textarea"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Second_rdo_Btn Content End -->
+                                    <!-- Radio_btn Collapse Content Start -->
+                            </div>
+                        </div>
+                    </div>
+                            <a class="anchor_link" href="javascript:void(0)">Cancel</a>
+                            <a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!--  fieldset 1 End-->
+
+                <!-- fieldset 2 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                        <div class="form-head">
+                            <h6>Step 2/7</h6>
+                            <h4>Event Info</h4>
+                        </div>
+                        <div class="form-body">
+                            <div class="row gy-3">
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label">Event Category</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Category</option>
+                                        <option value="1">Event One</option>
+                                        <option value="2">Event Two</option>
+                                        <option value="3">Event Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="" class="form-label">Event Type</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select Type</option>
+                                        <option value="1">Type One</option>
+                                        <option value="2">Type Two</option>
+                                        <option value="3">Type Three</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="my-3">
+                                    <a href="javascript:void(0)" class="theme_btn">Additional Category <i class="mx-1 bi bi-plus-lg"></i> Type</a>
+                            </div>
+
+                            <div>
+                                    <label class="fw-500 theme_label" for="Event">Event Name</label>
+                                    <input class="w-100 theme_input" id="Event" type="text" placeholder="">
+                            </div>
+                            
+                            
+                            <div class="select_location" id="regularAccordionRobots2">
+                                    <div class="d-flex align-items-center gx-3 gy-3 gy-md-0 justify-content-lg-start justify-content-center mb-4">
+                                        <label for="radio-card-3" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseThird" aria-expanded="true" aria-controls="regularCollapseThird">
+                                            <input type="radio" name="radio-card2" id="radio-card-3" checked />
+                                            <div class="card-content-wrapper">
+                                                <span class="check-icon"></span>
+                                                <span class="location_name">Single Day Event</span>
+                                            </div>
+                                        </label>
+
+                                        <label for="radio-card-4" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseFourth" aria-expanded="false" aria-controls="regularCollapseFourth">
+                                            <input type="radio" name="radio-card2" id="radio-card-4" />
+                                            <div class="card-content-wrapper">
+                                                <span class="check-icon"></span>
+                                                <span class="location_name">Multi-Day Event</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <!-- Radio_btn Collapse Content Start -->
+                                        <!-- Third_rdo_Btn Content Start -->
+                                        <div class="accordion-collapse collapse show" id="regularCollapseThird" aria-labelledby="regularHeadingThird" data-bs-parent="#regularAccordionRobots2">
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-sm-6">
+                                                    <label class="fw-500 theme_label" for="">Start Date</label>
+                                                    <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="fw-500 theme_label" for="">End Date</label>
+                                                    <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="fw-500 theme_label" for="">Start Time</label>
+                                                    <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="fw-500 theme_label" for="">End Time</label>
+                                                    <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="fw-500 theme_label" for="textarea">Event description:</label>
+                                                    <textarea id="textarea" class="theme_textarea"></textarea>
+                                                    <div class="text-end w-100">100-1000 characters</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Third_rdo_Btn Content End -->
+
+                                        <!-- Fourth_rdo_Btn Content Start -->
+                                        <div class="accordion-collapse collapse" id="regularCollapseFourth" aria-labelledby="regularHeadingFourth" data-bs-parent="#regularAccordionRobots2">
+                                            <div class="date_time_row">
+                                                <div class="row gx-3 gy-3">
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">Start Date</label>
+                                                        <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">End Date</label>
+                                                        <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">Start Time</label>
+                                                        <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">End Time</label>
+                                                        <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="date_time_row">
+                                                <div class="row gx-3 gy-3">
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">Start Date</label>
+                                                        <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">End Date</label>
+                                                        <input class="w-100 theme_input" id="" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">Start Time</label>
+                                                        <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label class="fw-500 theme_label" for="">End Time</label>
+                                                        <input class="w-100 theme_input" id="" type="time" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <a href="javascript:void(0)" class="theme_btn"><i class="bi bi-plus-lg"></i> Add date and time</a>
+                                            </div>
+
+                                            <div class="w-100">
+                                                <label class="fw-500 theme_label" for="textarea">Event description:</label>
+                                                <textarea id="textarea" class="theme_textarea"></textarea>
+                                                <div class="text-end w-100">100-1000 characters</div>
+                                            </div>
+                                        </div>
+                                        <!-- Fourth_rdo_Btn Content End -->
+                                    <!-- Radio_btn Collapse Content Start -->
+                            </div>
+                        </div>
+                    </div>
+                        <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+                        <a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!-- fieldset 2 End -->
+
+                <!-- Fieldset 3 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                        <div class="form-head">
+                            <h6>Step 3/7</h6>
+                            <h4>Event Charge</h4>
+                        </div>
+                        <div class="form-body">					   
+                            <div class="select_location" id="regularAccordionRobots3">
+                                <div class="d-flex align-items-center gx-3 gy-3 gy-md-0 justify-content-lg-start justify-content-center mb-4">
+                                    <label for="radio-card-5" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseFifth" aria-expanded="true" aria-controls="regularCollapseFifth">
+                                        <input type="radio" name="radio-card3" id="radio-card-5" checked />
+                                        <div class="card-content-wrapper">
+                                            <span class="check-icon"></span>
+                                            <span class="location_name">Charge</span>
+                                        </div>
+                                    </label>
+
+                                    <label for="radio-card-6" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseSixth" aria-expanded="false" aria-controls="regularCollapseSixth">
+                                        <input type="radio" name="radio-card3" id="radio-card-6" />
+                                        <div class="card-content-wrapper">
+                                            <span class="check-icon"></span>
+                                            <span class="location_name">No Charge</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <!-- Radio_btn Collapse Content Start -->
+                                    <!-- Fifth_rdo_Btn Content Start -->
+                                    <div class="accordion-collapse collapse show" id="regularCollapseFifth" aria-labelledby="regularHeadingFifth" data-bs-parent="#regularAccordionRobots3">
+                                        <div class="row gx-3 gy-3">
+                                            <div class="col-12">
+                                                <label class="fw-500 theme_label" for="Price">Ticket Price: $</label>
+                                                <input class="w-100 theme_input" id="Price" type="text" placeholder="">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="fw-500 theme_label" for="Link">Website Link</label>
+                                                <input class="w-100 theme_input" id="Link" type="text" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check mb-3 venue_radio_select check_radioBtn">
+                                            <label class="form-check-label" for="RSVPRequired">
+                                                <input class="mt-0 form-check-input shadow-none " type="checkbox" value="" id="RSVPRequired">
+                                                RSVP Required
+                                            </label>
+                                        </div>
+
+                                        <div class="hidden_section">
+                                            <div class="row gx-3 gy-3 mb-3">
+                                                <div class="col-12">
+                                                    <label class="fw-500 theme_label" for="RSVP">Email for RSVP</label>
+                                                    <input class="w-100 theme_input" id="RSVP" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-7 col-lg-6">
+                                                <label class="fw-500 theme_label" for="Guest">Max. Guest count</label>
+                                                <input class="w-100 theme_input" id="Guest" type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fifth_rdo_Btn Content End -->
+
+                                    <!-- Sixth_rdo_Btn Content Start -->
+                                    <div class="accordion-collapse collapse" id="regularCollapseSixth" aria-labelledby="regularHeadingSixth" data-bs-parent="#regularAccordionRobots3">
+                                        ---- Coming Soon ----
+                                    </div>
+                                    <!-- Sixth_rdo_Btn Content End -->
+                                <!-- Radio_btn Collapse Content Start -->
+                            </div>
+                        </div>
+                    </div>
+                    <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+                     <a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!-- Fieldset 3 end -->
+
+                <!-- Fieldset 4 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                        <div class="form-head">
+                            <h6>Step 4/7</h6>
+                            <h4>Event Image</h4>
+                        </div>
+                        <div class="form-body">					   
+                            <h5 class="ff-baoudisplay mt-3 mb-4">Upload event flyer or Images below</h5>
+
+                            <div class="fileUploadWrapper">
+                                    <label class="fileLabel" for="fileUpload">
+                                        <img src="images/upload-icon.svg" alt="" />
+                                        <input class="w-100 fileInput" type="file" id="fileUpload" />
+                                        <p class="label_para">Drag and drop or click here to upload image</p>
+                                        <label class="theme_btn mt-4 py-3 px-5" for="fileUpload">Add Image</label>
+                                    </label>
+                                    <p class="mb-0 text-center mt-3">Image size 400px and higher with minimum 72dpi. Best results with images 720x480px and 150dpi</p>
+                            </div>
+
+                            <div class="mt-4 text-center">
+                                    <a href="javascript:void(0)" class="theme_btn"><i class="bi bi-plus-lg"></i> Add More</a>
+                                </div>
+                        </div>
+                    </div>
+                    <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+                    <a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!-- Fieldset 4End -->
+
+                <!-- Fieldset 5 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                     <div class="form-head">
+                        <h6>Step 5/7</h6>
+                        <h4>Select Audience</h4>
+                     </div>
+                     <div class="form-body">					   
+						   <div class="select_location" id="regularAccordionRobots4">
+								<div class="d-flex align-items-center gx-3 gy-3 gy-md-0 justify-content-lg-start justify-content-center mb-4">
+									<label for="radio-card-7" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseSeventh" aria-expanded="true" aria-controls="regularCollapseSeventh">
+										<input type="radio" name="radio-card5" id="radio-card-7" checked />
+										<div class="card-content-wrapper">
+											<span class="check-icon"></span>
+											<span class="location_name">Basic Audience Selection</span>
+										</div>
+									</label>
+
+									<label for="radio-card-8" class="radio-card w-100" data-bs-toggle="collapse" data-bs-target="#regularCollapseEighth" aria-expanded="false" aria-controls="regularCollapseEighth">
+										<input type="radio" name="radio-card5" id="radio-card-8" />
+										<div class="card-content-wrapper">
+											<span class="check-icon"></span>
+											<span class="location_name">Advanced Audience Selection</span>
+										</div>
+									</label>
+								</div>
+
+								<!-- Radio_btn Collapse Content Start -->
+									<!-- Seventh_rdo_Btn Content Start -->
+									<div class="accordion-collapse collapse show" id="regularCollapseSeventh" aria-labelledby="regularHeadingSeventh" data-bs-parent="#regularAccordionRobots4">
+
+                                        <div class="audience_option">
+                                            <label class="theme_label" for="">Option 1</label>
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Drink Alcohol</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Whiskey/Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scotch Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Speyside Scotch</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row gx-3 gy-3">
+                                            <div class="col-sm-6">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Age Range</option>
+                                                    <option value="1">Option One</option>
+                                                    <option value="2">Option Two</option>
+                                                    <option value="3">Option Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Gender</option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                    <option value="3">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="rangeWrapper">
+                                            <h5>Select Radius</h5>
+
+                                            <div class="range-slider">
+                                                <div class="tooltip" id="tooltip1"></div>
+                                                <input class="range1" id="range1" type="range" step="10" value="200" min="0" max="800">
+                                                <div class="showTooltip" id="showTooltip1"> miles</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-gray">Targeted audience based on selections : <span class="fw-600 text-black">876 Users</span></p>
+
+                                        <div class="feesWrapper">
+                                            <h5 class="ff-baoudisplay mb-4">Event Promo fee:</h5>
+                                            <div class="fees_types">
+                                                <p class="text-gray mb-0">Basic</p>
+                                                <span class="text-black fw-600">$250.00</span>
+                                            </div>
+                                            <div class="fees_types">
+                                                <p class="text-gray mb-0">Radius/ Users</p>
+                                                <span class="text-black fw-600">$375.50</span>
+                                            </div>
+                                            <div class="fees_total">
+                                                <p class="mb-0 fw-600">Total</p>
+                                                <span class="fw-600">$625.00</span>
+                                            </div>
+                                        </div>
+                                        
+									</div>
+									<!-- Seventh_rdo_Btn Content End -->
+
+									<!-- Eighth_rdo_Btn Content Start -->
+									<div class="accordion-collapse collapse" id="regularCollapseEighth" aria-labelledby="regularHeadingEighth" data-bs-parent="#regularAccordionRobots4">
+										<div class="audience_option">
+                                            <label class="theme_label" for="">Option 1</label>
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Drink Alcohol</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Whiskey/Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scotch Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Speyside Scotch</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="audience_option">
+                                            <label class="theme_label" for="">Option 2
+                                                <a href="javascript:void(0)" class="outline-none border-0 bg-transparent remove_btn"><i class="bi bi-trash3"></i> Remove</a>
+                                            </label>
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Drink Alcohol</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Whiskey/Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scotch Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Speyside Scotch</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="audience_option">
+                                            <label class="theme_label" for="">Option 3
+                                                <a href="javascript:void(0)" class="outline-none border-0 bg-transparent remove_btn"><i class="bi bi-trash3"></i> Remove</a>
+                                            </label>
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Drink Alcohol</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Whiskey/Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scotch Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Speyside Scotch</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="audience_option">
+                                            <label class="theme_label" for="">Option 4
+                                                <a href="javascript:void(0)" class="outline-none border-0 bg-transparent remove_btn"><i class="bi bi-trash3"></i> Remove</a>
+                                            </label>
+                                            <div class="row gx-3 gy-3">
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Drink Alcohol</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Whiskey/Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scotch Whisky</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Speyside Scotch</option>
+                                                        <option value="1">Option One</option>
+                                                        <option value="2">Option Two</option>
+                                                        <option value="3">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="my-4 text-center">
+                                            <a href="javascript:void(0)" class="theme_btn"><i class="bi bi-plus-lg"></i> Add More</a>
+                                        </div>
+
+                                        <div class="row gx-3 gy-3">
+                                            <div class="col-sm-6">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Age Range</option>
+                                                    <option value="1">Option One</option>
+                                                    <option value="2">Option Two</option>
+                                                    <option value="3">Option Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Gender</option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                    <option value="3">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="rangeWrapper">
+                                            <h5>Select Radius</h5>
+
+                                            <div class="range-slider">
+                                                <div class="tooltip" id="tooltip2"></div>
+                                                <input class="range2" id="range2" type="range" step="10" value="360" min="0" max="800">
+                                                <div class="showTooltip" id="showTooltip2"> miles</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-gray">Targeted audience based on selections : <span class="fw-600 text-black">876 Users</span></p>
+
+                                        <div class="feesWrapper">
+                                            <h5 class="ff-baoudisplay mb-4">Event Promo fee:</h5>
+                                            <div class="fees_types">
+                                                <p class="text-gray mb-0">Basic</p>
+                                                <span class="text-black fw-600">$250.00</span>
+                                            </div>
+                                            <div class="fees_types">
+                                                <p class="text-gray mb-0">Advanced</p>
+                                                <span class="text-black fw-600">$1,200.00</span>
+                                            </div>
+                                            <div class="fees_types">
+                                                <p class="text-gray mb-0">Radius/ Users</p>
+                                                <span class="text-black fw-600">$650.00</span>
+                                            </div>
+                                            <div class="fees_total">
+                                                <p class="mb-0 fw-600">Total</p>
+                                                <span class="fw-600">$2,100.00</span>
+                                            </div>
+                                        </div>
+									</div>
+									<!-- Eighth_rdo_Btn Content End -->
+								<!-- Radio_btn Collapse Content Start -->
+						   </div>
+                     </div>
+                  </div>
+                  <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+					<a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!-- Fieldset 5 end -->
+
+                <!-- Fieldset 6 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                        <div class="form-head">
+                            <h6>Step 6/7</h6>
+                            <h4>Final Steps</h4>
+                        </div>
+                        <div class="form-body">
+                                <p class="text-gray">Please provide contact info of submitting member in case we have questions or need to provide support.</p>
+                                <div class="row gx-3 gy-3">
+                                    <div class="col-sm-6">
+                                        <input class="w-100 theme_input" id="" type="text" placeholder="First">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="w-100 theme_input" id="" type="text" placeholder="Last">
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="w-100 theme_input" id="" type="text" placeholder="Title">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="w-100 theme_input" id="" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="w-100 theme_input" id="" type="phone" placeholder="Phone">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+                    <a class="theme_blackBtn next" href="javascript:void(0)">Next Step</a>
+                </fieldset>
+                <!-- Fieldset 6 end -->
+
+                <!-- Fieldset 7 Start -->
+                <fieldset>
+                    <div class="form-wrap">
+                     <div class="form-head">
+                        <img src="images/payment.svg" alt="payment" />
+                     </div>
+                     <div class="form-body">
+                            <div class="row gx-3 gy-3">
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">First Name</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Last Name</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                                <div class="col-12">
+                                    <label class="fw-500 theme_label" for="">Card Number</label>
+                                    <input class="w-100 theme_input" id="" type="number" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Expiration Date</label>
+                                    <input class="w-100 theme_input" id="" type="date" placeholder="Email">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Card CVC</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Postal Code</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                            </div>
+                     </div>
+                  </div>
+
+                  <div class="form-wrap mt-5">
+                     <div class="form-head">
+                        <h4 class="mb-0">Billing information</h4>
+                     </div>
+                     <div class="form-body">
+                            <div class="row gx-3 gy-3">
+                                <div class="col-12">
+                                    <label class="fw-500 theme_label" for="">Address</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Country</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected="">Drink Alcohol</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">Postal Code</label>
+                                    <input class="w-100 theme_input" id="" type="number" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">City</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fw-500 theme_label" for="">State</label>
+                                    <input class="w-100 theme_input" id="" type="text" placeholder="">
+                                </div>
+                            </div>
+                     </div>
+                  </div>
+
+                  <div class="totalWrapper">
+                        <p class="mb-0">Confirm Event Launch</p>
+                        <p class="mb-0 text-end">Total: $2,100.00</p>
+                  </div>
+
+                    <a class="anchor_link previous" href="javascript:void(0)"><i class="bi bi-arrow-left"></i> Go Back</a>
+                    <a class="theme_blackBtn" href="javascript:void(0)">Confirm</a>
+                </fieldset>
+                <!-- Fieldset 7 end -->
+            </form>
+        </div>
+      </div>
+
+
+
+      <!-- Option 1: Bootstrap Bundle with Popper --> 
+      <script src="js/jquery-3.6.0.min.js"></script> 
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/script.js"></script>
+
+   </body>
+</html>

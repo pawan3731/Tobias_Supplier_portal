@@ -660,24 +660,43 @@ ul{margin-bottom: 0;}
 /* Dashboard Css */
 /* Dashboard */
 .dashboardWrap {
-    display: flex;
-    flex-flow: wrap;
+    display: block;
     width: 100%;
+    height: 100%;
+    float: left;
+    padding-left: 270px;
 }
 
 /* Side Nav */
 .sideNav {
-    flex-basis: 260px;
-    position: fixed;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.10);
     background: #0E2238;
     height: 100%;
-    width: 260px;
+    width: 270px;
     padding:20px 12px 0 0px;
     overflow-y: auto;
     z-index: 9;
+    left: 0;
+    height: 100vh;
+	position: fixed;
+    top: 0;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
+}
+
+/* width */
+.sideNav::-webkit-scrollbar {
+	width: 10px;
+}
+  
+.sideNav::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #999; 
+	border-radius: 10px;
+}
+   
+.sideNav::-webkit-scrollbar-thumb {
+	background: #555; 
+	border-radius: 10px;
 }
 
 .navLogo  span {
@@ -703,10 +722,15 @@ ul{margin-bottom: 0;}
     font-weight: 400;
     padding: 11px 12px 11px 24px;
     border-radius: 0px 30px 30px 0px;
+	transition: .3s all;
 }
 
 .sideNav ul li a.active {
 	background-color: rgba(0, 202, 224,0.12);
+	color: #00CAE0;
+}
+
+.sideNav ul li a:hover {
 	color: #00CAE0;
 }
 
@@ -715,7 +739,7 @@ ul{margin-bottom: 0;}
     text-align: center;
 }
 
-.sideNav ul li a.active svg path {
+.sideNav ul li a.active svg path, .sideNav ul li a:hover svg path {
 	fill: #00CAE0;
 }
 
@@ -723,6 +747,7 @@ ul{margin-bottom: 0;}
 	text-align: center;
 	margin-top: auto;
     margin-bottom: 30px;
+	padding-top: 20px;
 }
 
 .themeBtn {
@@ -735,6 +760,13 @@ ul{margin-bottom: 0;}
     font-weight: 600;
     border: 1px solid #00CAE0;
 	display: inline-block;
+	transition: .3s all;
+    text-transform: capitalize;
+}
+
+.themeBtn:hover {
+    color: #fff;
+    background-color: #01b3c7;
 }
 
 .navClose {
@@ -742,12 +774,9 @@ ul{margin-bottom: 0;}
 }	
 
 
-
 /* Dashboard Content */
 .dashboardContent {
-    flex-basis: calc(100% - 260px);
     padding-inline: 45px;
-    margin-left: 260px;
 }
 
 .titleWrap {
@@ -755,6 +784,7 @@ ul{margin-bottom: 0;}
     align-items: center;
     justify-content: space-between;
     padding: 40px 0 30px;
+	position: relative;
 }
 
 .titleWrap h1 {
@@ -796,8 +826,22 @@ ul{margin-bottom: 0;}
     border-radius: 15px;
 }
 
+.tableOuter {
+    width: 100%;
+    overflow-x: auto;
+    min-width: 100px;
+}
+
 .tableOuter table {
 	margin: 0;
+}
+
+.tableOuter table .min150 {
+	min-width: 210px;
+}
+
+.tableLayout_fixed {
+	table-layout: fixed;
 }
 
 .tableOuter table th, .tableOuter table td {
@@ -811,6 +855,7 @@ ul{margin-bottom: 0;}
     font-weight: 600;
     color: #000;
     border-bottom: none  !important;
+	min-width: 90px;
 }
 
 .tableOuter table td {
@@ -859,6 +904,7 @@ ul{margin-bottom: 0;}
     justify-content: center;
     font-size: 16px;
     color: #000;
+	cursor: pointer;
 }
 
 .tablePagination ul span.active {
@@ -868,7 +914,8 @@ ul{margin-bottom: 0;}
 
 .form-switch {
     padding-left: 0;
-	text-align: center;
+    max-width: 50px;
+    text-align: center;
 }
 
 .form-check-input:focus {
@@ -1089,7 +1136,76 @@ ul{margin-bottom: 0;}
     margin: 8px 0;
 }
 
+@media (max-width: 1399.98px) {
+	.titleWrap {
+		padding: 20px 0 20px;
+	}
 
-@media (min-width: 1200px) {
+	.dashboardContent {
+		padding-inline: 24px;
+	}
+}
+
+
+@media (max-width: 1199.98px) {
+	.titleWrap {
+		padding: 20px 0 20px 50px;
+	}
 	
+	.toggleMenu {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0;
+	}
+
+	.sideNav {
+		left: -100%;
+		transition: .3s all;
+	}
+
+	.sideNav.navOpen {
+		left: 0;
+	}
+
+	.navClose {
+		display: block;
+		width: 100%;
+		height: 28px;
+		text-align: right;
+		max-width: 28px;
+		position: absolute;
+		right: 7px;
+		top: 15px;
+	}
+
+	.navLogo  span {
+		padding: 0px 24px 30px;
+		font-size: 14px;
+	}
+
+	.sideNav ul li a {
+		font-size: 15px;
+	}
+
+	.dashboardWrap {
+		padding-left: 0;
+	}
+
+	.themeBtn {
+		padding: 10px 24px;
+		font-size: 16px;
+	}
+
+	.titleWrap h1 {
+		font-size: 20px;
+	}
+
+	.sectionTitle p {
+		font-size: 18px;
+	}
+
+	.tableOuter table td {
+		font-size: 14px;
+	}
 }
