@@ -96,6 +96,7 @@
         <div class="dashboardContent">
             <div class="contentWrap">
                 <div class="titleWrap">
+                    <div class="toggleMenu"><img src="./images/menu.svg" alt="menu-icon"></div>
                     <h1>Distributors</h1>
                     <select class="form-select">
                         <option value="10">Tobias Schopf</option>
@@ -156,6 +157,16 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.toggleMenu').click(function() {
+                $('.sideNav').addClass('navOpen');
+            });
+            $('.navClose').click(function() {
+                $('.sideNav').removeClass('navOpen');
+            });
+        });
+    </script>
 </body>
 
 </html>

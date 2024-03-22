@@ -799,7 +799,9 @@ ul{margin-bottom: 0;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-	padding: 20px;
+    padding: 20px;
+    flex-flow: wrap;
+    gap: 10px;
 }
 
 .sectionTitle.title_border {
@@ -1134,6 +1136,7 @@ ul{margin-bottom: 0;}
     align-items: center;
     column-gap: 12px;
     font-weight: 500;
+	font-size: 16px;
     margin: 8px 0;
 }
 
@@ -1215,5 +1218,53 @@ ul{margin-bottom: 0;}
 
 	.tableOuter table td {
 		font-size: 14px;
+	}
+
+	.modal-title {
+		font-size: 18px;
+	}
+
+	.modal .form-label, .modal .theme_label {
+		font-size: 16px;
+	}
+
+	.form-control, .form-select, .theme_input {
+		height: 42px;
+		font-size: 14px;
+	}
+
+	.theme_input, .theme_textarea {
+		padding: 5px 15px;
+		font-size: 14px;
+	}
+
+	.ticketNb p, .repay_des {
+		font-size: 16px;
+	}
+
+	.ticketTag span, .ticketNb span {
+		font-size: 14px;
+	}
+	
+	.repay_Title {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 767.98px) { 
+	.titleWrap h1 {
+		font-size: 18px;
+	}
+
+	.sectionTitle p {
+		font-size: 16px;
+	}
+
+	.tableShowingData {
+		font-size: 14px;
+	}
+
+	.dashboardContent {
+		padding-inline: 16px;
 	}
 }

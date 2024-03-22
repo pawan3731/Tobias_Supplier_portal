@@ -425,6 +425,17 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.toggleMenu').click(function() {
+                $('.sideNav').addClass('navOpen');
+            });
+            $('.navClose').click(function() {
+                $('.sideNav').removeClass('navOpen');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -96,6 +96,7 @@
         <div class="dashboardContent">
             <div class="contentWrap">
                 <div class="titleWrap">
+                    <div class="toggleMenu"><img src="./images/menu.svg" alt="menu-icon"></div>
                     <h1>Select Distributor</h1>
                     <select class="form-select">
                         <option value="10">Tobias Schopf</option>
@@ -126,7 +127,7 @@
                                     <li><span><img src="./images/tickIcon.svg" alt="tick-icon"> </span> Idaho</li>
                                 </ul>
                             </div>
-                            <form class="mt-5">
+                            <form class="mt-4 mt-lg-5">
                                 <div class="row gy-3">
                                     <div class="col-12">
                                         <label class="fw-500 theme_label" for="brand_Name">distributors</label>
@@ -151,6 +152,16 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.toggleMenu').click(function() {
+                $('.sideNav').addClass('navOpen');
+            });
+            $('.navClose').click(function() {
+                $('.sideNav').removeClass('navOpen');
+            });
+        });
+    </script>
 </body>
 
 </html>
