@@ -761,6 +761,7 @@ ul{margin-bottom: 0;}
     border: 1px solid #00CAE0;
 	display: inline-block;
 	transition: .3s all;
+	white-space: nowrap;
     text-transform: capitalize;
 }
 
