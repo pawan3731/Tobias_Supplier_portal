@@ -699,7 +699,7 @@ ul{margin-bottom: 0;}
 	border-radius: 10px;
 }
 
-.navLogo  span {
+.navLogo  a {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -881,6 +881,11 @@ ul{margin-bottom: 0;}
     border-radius: 6px;
 }
 
+.tableLogo_td .tableProductImg img {
+    width: auto;
+	border-radius: 0;
+}
+
 .tableBottonData {
 	padding: 20px;
 }
@@ -1039,7 +1044,7 @@ ul{margin-bottom: 0;}
 
 /* Contact Us */
 .formTitle {
-    margin: 40px 0 10px;
+    margin: 20px 0 10px;
     font-size: 20px;
     color: #000;
     font-weight: 600;
@@ -1191,7 +1196,7 @@ ul{margin-bottom: 0;}
 		top: 15px;
 	}
 
-	.navLogo  span {
+	.navLogo  a {
 		padding: 0px 24px 30px;
 		font-size: 14px;
 	}
