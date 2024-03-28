@@ -971,7 +971,7 @@ ul{margin-bottom: 0;}
 /* Popup Css */
 .modal-dialog {
     max-width: 1096px;
-	max-width: 95%;
+	width: 95%;
 }
 
 .modal-content {
