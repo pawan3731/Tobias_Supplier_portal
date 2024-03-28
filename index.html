@@ -97,20 +97,24 @@
             <div class="contentWrap">
                 <div class="titleWrap">
                     <div class="toggleMenu"><img src="./images/menu.svg" alt="menu-icon"></div>
-                    <h1>Portfolio Overview</h1>
-                    <select class="form-select">
-                        <option value="10">Tobias Schopf</option>
-                        <option value="10">1</option>
-                        <option value="10">2</option>
-                        <option value="10">3</option>
-                        <option value="10">4</option>
-                    </select>
+                    <h1>Brand Overview</h1>
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tobias Schopf
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="user_profile.html">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="change_password.html">Change Password</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="whiteBg">
                     <div class="sectionTitle">
                         <p>William Grant & Sons</p>
-                        <button type="button" class="themeBtn" data-bs-toggle="modal" data-bs-target="#addProduct">+ Add
-                            Product</button>
+                        <button type="button" class="themeBtn" data-bs-toggle="modal" data-bs-target="#addBrand">+ Add
+                            Brand</button>
                     </div>
                     <div class="tableOuter">
                         <div class="table-responsive">
@@ -127,7 +131,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Hendrick's Gin</td>
+                                        <td><a href="product_overview.html"> Hendrick's Gin</a></td>
                                         <td class="tableLogo_td">
                                             <div class="tableProductImg"><img src="./images/logo01.svg"
                                                     alt="Product-img"></div>
@@ -151,7 +155,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Sailor Jerry</td>
+                                        <td><a href="product_overview.html">Sailor Jerry</a></td>
                                         <td class="tableLogo_td">
                                             <div class="tableProductImg"><img src="./images/logo02.svg"
                                                     alt="Product-img"></div>
@@ -175,7 +179,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Glenfiddich</td>
+                                        <td><a href="product_overview.html">Glenfiddich</a></td>
                                         <td class="tableLogo_td">
                                             <div class="tableProductImg"><img src="./images/logo04.svg"
                                                     alt="Product-img"></div>
@@ -227,154 +231,6 @@
     </div>
 
 
-    <!-- Add Product Modal -->
-    <div class="modal fade" id="addProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Product Info</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row gy-3">
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="product_Name">Product Name</label>
-                                <input class="w-100 theme_input" id="product_Name" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Product category</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Category</option>
-                                    <option value="1">Category One</option>
-                                    <option value="2">Category Two</option>
-                                    <option value="3">Category Three</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="fw-500 theme_label" for="textarea">Product Description</label>
-                                <textarea id="textarea" class="theme_textarea"></textarea>
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="abv_field">ABV %</label>
-                                <input class="w-100 theme_input" id="abv_field" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="proof_field">Proof %</label>
-                                <input class="w-100 theme_input" id="proof_field" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Color</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Color</option>
-                                    <option value="1">Color One</option>
-                                    <option value="2">Color Two</option>
-                                    <option value="3">Color Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Container type</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Type</option>
-                                    <option value="1">Type One</option>
-                                    <option value="2">Type Two</option>
-                                    <option value="3">Type Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Size/Volume</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Size/Volume</option>
-                                    <option value="1">Volume One</option>
-                                    <option value="2">Volume Two</option>
-                                    <option value="3">Volume Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Count per case</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Count per case</option>
-                                    <option value="1">Count One</option>
-                                    <option value="2">Count Two</option>
-                                    <option value="3">Count Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="bottle_upc">Bottle UPC</label>
-                                <input class="w-100 theme_input" id="bottle_upc" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="case_upc">Case UPC</label>
-                                <input class="w-100 theme_input" id="case_upc" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="sku_field">SKU #</label>
-                                <input class="w-100 theme_input" id="case_upc" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">Country</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Country</option>
-                                    <option value="1">Country One</option>
-                                    <option value="2">Country Two</option>
-                                    <option value="3">Country Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="fw-500 theme_label" for="region_field">Region (Optional)</label>
-                                <input class="w-100 theme_input" id="region_field" type="text" placeholder="">
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">State</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select State</option>
-                                    <option value="1">State One</option>
-                                    <option value="2">State Two</option>
-                                    <option value="3">State Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="" class="form-label">City</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select City</option>
-                                    <option value="1">City One</option>
-                                    <option value="2">City Two</option>
-                                    <option value="3">City Three</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="customFile__input">
-                                    Logo Image <span>Browse</span>
-                                    <input class="form-control form-control-lg" type="file" id="formFile">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="customFile__input">
-                                    Banner image 1 <span>Browse</span>
-                                    <input class="form-control form-control-lg" type="file" id="formFile">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="customFile__input">
-                                    Banner image 2 <span>Browse</span>
-                                    <input class="form-control form-control-lg" type="file" id="formFile">
-                                </div>
-                            </div>
-                            <div class="col-lg-12 text-end mt-4">
-                                <button type="button" class="themeBtn">Save Changes</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Modal -->
     <div class="modal fade" id="addBrand" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="max-width: 800px;">
@@ -399,6 +255,12 @@
                                     <option value="3">Category Three</option>
                                 </select>
                             </div>
+                            <div class="col-lg-12">
+                                <div class="customFile__input">
+                                    Logo <span>Browse</span>
+                                    <input class="form-control form-control-lg" type="file" id="formFile">
+                                </div>
+                            </div>
                             <div class="col-lg-12 text-end mt-4">
                                 <button type="button" class="themeBtn">Save Changes</button>
                             </div>
@@ -407,7 +269,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/jquery-3.6.0.min.js"></script>

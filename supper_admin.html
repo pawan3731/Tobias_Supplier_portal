@@ -97,107 +97,40 @@
             <div class="contentWrap">
                 <div class="titleWrap">
                     <div class="toggleMenu"><img src="./images/menu.svg" alt="menu-icon"></div>
-                    <h1>Superadmin</h1>
-                    <select class="form-select">
-                        <option value="10">Tobias Schopf</option>
-                        <option value="10">1</option>
-                        <option value="10">2</option>
-                        <option value="10">3</option>
-                        <option value="10">4</option>
-                    </select>
+                    <h1>Supplier Profile</h1>
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tobias Schopf
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="user_profile.html">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="change_password.html">Change Password</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="whiteBg">
-                    <div class="sectionTitle">
-                        <p>List Users and show</p>
-                        <a href="user_profile.html" class="themeBtn">+ Add
-                            User</a>
-                    </div>
                     <div class="tableOuter">
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th class="min150">First Name</th>
-                                        <th>Last Name</th>
-                                        <th class="min150">Role</th>
-                                        <th>Brand</th>
-                                        <th class="min150">Access Level</th>
-                                        <th>Status</th>
+                                        <th class="min150">Supplier Name</th>
+                                        <th class="min150">Headquarter Address</th>
+                                        <th class="min150">Country of Origin</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>First Name</td>
-                                        <td>Last Name</td>
-                                        <td>Role</td>
-                                        <td>Hendrick's</td>
-                                        <td>Access Level</td>
-                                        <td>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault" checked>
-                                                <label class="form-check-label"
-                                                    for="flexSwitchCheckDefault">Active</label>
-                                            </div>
-                                        </td>
+                                        <td>William Grant & Sons</td>
+                                        <td>300 Park Ave S #600, New York, NY 10010</td>
+                                        <td>Scotland</td>
                                         <td>
                                             <div class="actionBtn">
                                                 <button type="button" class="btn editBtn">
                                                     <img src="./images/editIcon.svg" alt="edit-icon">
-                                                </button>
-                                                <button type="button" class="btn deleteIcon">
-                                                    <img src="./images/deleteIcon.svg" alt="book-icon">
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>First Name</td>
-                                        <td>Last Name</td>
-                                        <td>Role</td>
-                                        <td>Hendrick's</td>
-                                        <td>Access Level</td>
-                                        <td>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault" checked>
-                                                <label class="form-check-label"
-                                                    for="flexSwitchCheckDefault">Active</label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="actionBtn">
-                                                <button type="button" class="btn editBtn">
-                                                    <img src="./images/editIcon.svg" alt="edit-icon">
-                                                </button>
-                                                <button type="button" class="btn deleteIcon">
-                                                    <img src="./images/deleteIcon.svg" alt="book-icon">
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>First Name</td>
-                                        <td>Last Name</td>
-                                        <td>Role</td>
-                                        <td>Hendrick's</td>
-                                        <td>Access Level</td>
-                                        <td>
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" role="switch"
-                                                    id="flexSwitchCheckDefault">
-                                                <label class="form-check-label"
-                                                    for="flexSwitchCheckDefault">Deactive</label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="actionBtn">
-                                                <button type="button" class="btn deleteIcon">
-                                                    <img src="./images/editIcon.svg" alt="edit-icon">
-                                                </button>
-                                                <button type="button" class="btn bookBtn">
-                                                    <img src="./images/deleteIcon.svg" alt="book-icon">
                                                 </button>
                                             </div>
                                         </td>
@@ -225,6 +158,42 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="whiteBg mt-4 mt-lg-5">
+                    <div class="sectionTitle title_border">
+                        <p>Superadmin Contact</p>
+                    </div>
+                    <form class="p-4">
+                        <div class="row gy-3">
+                            <div class="col-lg-4">
+                                <label class="fw-500 theme_label" for="admin_name">Name</label>
+                                <input class="w-100 theme_input" id="admin_name" type="text" placeholder="Tobias">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="fw-500 theme_label" for="admin_title">Title</label>
+                                <input class="w-100 theme_input" id="admin_title" type="text" placeholder="Title">
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="fw-500 theme_label" for="admin_email">Email</label>
+                                <input class="w-100 theme_input" id="admin_email" type="text" placeholder="tobias@lyres.co">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="fw-500 theme_label" for="admin_phone">Phone Number</label>
+                                <input class="w-100 theme_input" id="admin_phone" type="text" placeholder="phone number">
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <button type="button" class="themeBtn">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sectionTitle px-0 mt-2">
+                    <p>5 Users</p>
+                </div>
+                <div class="mb-4">
+                    <button type="button" class="themeBtn">Edit User</button>
                 </div>
             </div>
         </div>

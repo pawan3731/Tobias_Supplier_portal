@@ -796,6 +796,19 @@ ul{margin-bottom: 0;}
     font-family: "Work Sans", sans-serif;
 }
 
+.titleWrap button.btn {
+    background: transparent;
+    color: #000;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.titleWrap .dropdown-menu {
+    border: 2px solid #B5B5B5;
+}
+
 .sectionTitle {
     display: flex;
     align-items: center;
@@ -861,6 +874,14 @@ ul{margin-bottom: 0;}
 	min-width: 90px;
 }
 
+.tableOuter table td a {
+	color: #666666;
+}
+
+.tableOuter table td a:hover {
+	text-decoration: underline;
+}
+
 .tableOuter table td {
     font-size: 16px;
     font-weight: 400;
@@ -872,6 +893,11 @@ ul{margin-bottom: 0;}
     font-size: 14px;
     font-weight: 400;
     padding: 11px 24px;
+	color: #fff;
+}
+
+.tableOuter .themeBtn:hover {
+	text-decoration: none;
 }
 
 .tableProductImg img {
