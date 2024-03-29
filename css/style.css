@@ -786,6 +786,7 @@ ul{margin-bottom: 0;}
     justify-content: space-between;
     padding: 40px 0 30px;
 	position: relative;
+	gap: 10px;
 }
 
 .titleWrap h1 {
@@ -1378,16 +1379,6 @@ ul{margin-bottom: 0;}
 		font-size: 16px;
 	}
 
-	.form-control, .form-select, .theme_input {
-		height: 42px;
-		font-size: 14px;
-	}
-
-	.theme_input, .theme_textarea {
-		padding: 5px 15px;
-		font-size: 14px;
-	}
-
 	.ticketNb p, .repay_des {
 		font-size: 16px;
 	}
@@ -1420,6 +1411,53 @@ ul{margin-bottom: 0;}
 
 	.authorPage .titleWrap h1 {
 		font-size: 30px;
+	}
+
+	.titleWrap button.btn {
+		font-size: 15px;
+	}
+
+	.form-control, .form-select, .theme_input {
+		height: 42px;
+		font-size: 14px;
+	}
+
+	.theme_input, .theme_textarea {
+		padding: 5px 15px;
+		font-size: 14px;
+	}
+
+	.form-label, .theme_label {
+		font-size: 15px;
+		margin-bottom: 6px;
+	}
+
+	.form-head h4, .form-body h5 {
+		font-size: 18px;
+	}
+
+	.select_location .card-content-wrapper {
+		padding: 8px 25px;
+		font-size: 14px;
+	}
+
+	.theme_blackBtn, .theme_btn {
+		font-size: 15px;
+	}
+
+	.form-body {
+		padding: 20px;
+	}
+
+	.totalWrapper {
+		padding: 20px;
+		margin-top: 25px;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.totalWrapper p {
+		font-size: 16px;
 	}
 }
 
@@ -1455,5 +1493,9 @@ ul{margin-bottom: 0;}
 
 	.authorPage .titleWrap h1 {
 		font-size: 24px;
+	}
+
+	.form-body h5 {
+		font-size: 16px;
 	}
 }
