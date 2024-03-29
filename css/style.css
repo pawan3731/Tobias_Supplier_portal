@@ -1345,6 +1345,10 @@ ul{margin-bottom: 0;}
 		font-size: 15px;
 	}
 
+	.navBtn {
+		margin-bottom: 70px;
+	}
+
 	.dashboardWrap {
 		padding-left: 0;
 	}
