@@ -1274,9 +1274,14 @@ ul{margin-bottom: 0;}
     align-items: center;
     justify-content: center;
 	flex-direction: column;
+	padding: 0 20px;
 }
 
-.titleWrap h1 {
+.authorPage .titleWrap {
+	padding-left: 0;
+}
+
+.authorPage .titleWrap h1 {
     font-size: 36px;
 }
 
@@ -1408,6 +1413,10 @@ ul{margin-bottom: 0;}
 		padding: 5px 14px;
 		font-size: 14px;
 	}
+
+	.authorPage .titleWrap h1 {
+		font-size: 30px;
+	}
 }
 
 @media (max-width: 767.98px) { 
@@ -1438,5 +1447,9 @@ ul{margin-bottom: 0;}
 
 	.promoteIcon img {
 		width: 32px;
+	}
+
+	.authorPage .titleWrap h1 {
+		font-size: 24px;
 	}
 }
