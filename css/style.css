@@ -2,8 +2,10 @@
 	--pirmaryColor: #EA8803;
 	--secondaryColor: #222;
 	--textColor: #444;
+	--borderColor: #ddd;
 	--whiteColor: #fff;
 	--transition01: .4s all; 
+	--lightBg: #e4f3ff;
 }
 
 /* Common */
@@ -18,6 +20,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Urbanist", sans-serif;
+}
+a, a:hover {
+	text-decoration: none;
 }
 .btn {
     padding: 10.2px 28px;
@@ -39,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--pirmaryColor) !important;
 }
 .sectionPadding {
-	padding-block: 100px;
+	padding-block: 80px;
 }
 .sectionTitle h2 {
 	font-size: 42px;
@@ -50,6 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 .sectionTitle p {
 	font-size: 16px;
 	color: var(--textColor);
+}
+.lightBg {
+	background-color: var(--lightBg) !important;
+}
+.lightBg02 {
+	background-color: #fbf7ec !important;
 }
 
 /* Header */
@@ -87,17 +98,86 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Popular Services */
-.popularContent {
+.insta_CardContent {
     padding-block: 12px;
 }
-.popularContent p {
-    font-size: 12px;
+.cardSubTitle {
+    font-size: 14px;
     color: var(--textColor);
 	font-weight: 500;
 }
-.popularContent h4 {
+.cardTitle {
 	color: var(--secondaryColor);
 	font-weight: 600;
 	font-size: 18px;
 	margin-top: 8px;
+}
+.location {
+	color: var(--textColor);
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 10px;
+}	
+
+/*  Category Section */
+.categoryCard {
+    border: 1px solid var(--borderColor);
+    padding: 30px;
+    text-align: center;
+	background-color: var(--whiteColor);
+}
+
+.categoryIcon {
+    font-size: 32px;
+    border: 1px solid var(--borderColor);
+    width: 72px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: var(--pirmaryColor);
+    margin: 0 auto 24px;
+}
+
+.countCard {
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+	border: 1px solid var(--borderColor);
+}	
+.countCard h3 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.appLink_outer {
+	display: flex;
+	gap: 16px;
+	margin-top: 30px;
+}
+
+.appLink_btn {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    width: 185px;
+    justify-content: center;
+}
+
+.appLink_btn i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.appLink_btn span {
+    font-size: 14px;
+    color: #fff;
 }
