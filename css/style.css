@@ -81,6 +81,8 @@ a, a:hover {
     height: calc(100vh - 100px);
     display: flex;
     align-items: center;
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner_text {
