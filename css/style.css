@@ -66,6 +66,7 @@ a, a:hover {
 /* Header */
 .siteHeader {
     padding-block: 16px;
+	border-bottom: 1px solid var(--borderColor);
 }
 .siteHeader .nav-item .nav-link {
     font-size: 16px;
@@ -98,6 +99,15 @@ a, a:hover {
 }
 
 /* Popular Services */
+.insta_Card .insta_CardImg {
+	overflow: hidden;
+}
+.insta_Card .insta_CardImg img {
+	transition: var(--transition01);
+}
+.insta_Card:hover .insta_CardImg img {
+	transform: scale(1.05);
+}
 .insta_CardContent {
     padding-block: 12px;
 }
@@ -126,7 +136,6 @@ a, a:hover {
     text-align: center;
 	background-color: var(--whiteColor);
 }
-
 .categoryIcon {
     font-size: 32px;
     border: 1px solid var(--borderColor);
@@ -138,8 +147,14 @@ a, a:hover {
     border-radius: 5px;
     color: var(--pirmaryColor);
     margin: 0 auto 24px;
+	transition: .4s all;
 }
 
+.categoryCard:hover .categoryIcon {
+	transform: translateY(-6px);
+}
+
+/* Count Section */
 .countCard {
     background: #fff;
     padding: 50px;
@@ -154,13 +169,12 @@ a, a:hover {
     margin-bottom: 12px;
 }
 
-
+/* App Link Section */
 .appLink_outer {
 	display: flex;
 	gap: 16px;
 	margin-top: 30px;
 }
-
 .appLink_btn {
     background: rgba(255, 255, 255, 0.1);
     display: flex;
@@ -171,13 +185,54 @@ a, a:hover {
     width: 185px;
     justify-content: center;
 }
-
 .appLink_btn i {
     font-size: 20px;
     color: #fff;
 }
-
 .appLink_btn span {
     font-size: 14px;
     color: #fff;
+}
+
+/* Footer */
+.footerContent h4 {
+    font-size: 20px;
+    font-weight: 600;
+	color: var(--secondaryColor);
+	margin-bottom: 16px;
+}
+
+.footerContent ul {
+    list-style: none;
+}
+
+.footerContent ul a {
+    color: var(--textColor);
+    font-size: 14px;
+    display: flex;
+	align-items: center;
+	gap: 10px;
+    margin: 10px 0;
+}
+
+.footerContent .form-control {
+    height: 46px;
+    font-size: 14px;
+	border-color: var(--borderColor);
+}
+
+button.sendBtn {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: var(--pirmaryColor);
+	color: var(--whiteColor);
+    position: absolute;
+    right: 6px;
+    top: 5px;
+}
+
+.copyright {
+    border-top: 1px solid #ddd;
 }
