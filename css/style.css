@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5, h6 {
 a, a:hover {
 	text-decoration: none;
 }
+.container {
+    max-width: 1440px;
+    padding-inline: 24px;
+}
+button:focus{
+    outline: unset !important;
+    box-shadow: none !important;
+}
 .btn {
     padding: 10.2px 28px;
     border-radius: 5px;
@@ -44,7 +52,7 @@ a, a:hover {
 	color: var(--pirmaryColor) !important;
 }
 .sectionPadding {
-	padding-block: 80px;
+	padding-block: 90px;
 }
 .sectionTitle h2 {
 	font-size: 42px;
@@ -74,6 +82,9 @@ a, a:hover {
     font-weight: 600;
     padding-inline: 30px;
 }
+.siteHeader .nav-item .nav-link:hover {
+    color: var(--pirmaryColor);
+}
 
 /* Banner */
 .site_banner {
@@ -83,10 +94,12 @@ a, a:hover {
     align-items: center;
 	background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .banner_text {
 	max-width: 500px;
+    padding-block: 50px;
 }
 
 .banner_text h1 {
@@ -199,7 +212,7 @@ a, a:hover {
 /* Footer */
 .footerContent h4 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
 	color: var(--secondaryColor);
 	margin-bottom: 16px;
 }
@@ -207,7 +220,10 @@ a, a:hover {
 .footerContent ul {
     list-style: none;
 }
-
+.footerContent p {
+    color: var(--textColor);
+    font-size: 14px;
+}
 .footerContent ul a {
     color: var(--textColor);
     font-size: 14px;
@@ -215,6 +231,10 @@ a, a:hover {
 	align-items: center;
 	gap: 10px;
     margin: 10px 0;
+    transition: var(--transition01);
+}
+.footerContent ul a:hover {
+    color: var(--pirmaryColor);
 }
 
 .footerContent .form-control {
@@ -237,4 +257,78 @@ button.sendBtn {
 
 .copyright {
     border-top: 1px solid #ddd;
+}
+
+@media (max-width: 1199.98px) {
+    .sectionPadding {
+        padding-block: 70px;
+    }
+    .banner_text h1 {
+        font-size: 42px;
+    }
+    .banner_text p {
+        font-size: 16px;
+        margin: 12px 0 20px;
+    }
+    .sectionTitle h2 {
+        font-size: 36px;
+    }
+    .cardTitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .siteHeader .navbar-toggler svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .siteHeader .navbar-toggler {
+        padding: 0;
+    }
+
+    .siteHeader .navbar-collapse {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        top: 100%;
+        left: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(221, 221, 221);
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+
+    .siteHeader  .headerBtn {
+        margin-left: 30px !important;
+    }
+
+    .siteHeader  .navbar-brand img {
+        width: 150px;
+    }
+
+    .siteHeader {
+        padding-block: 8px;
+    }
+    .banner_text h1 {
+        font-size: 36px;
+    }
+    .sectionTitle h2 {
+        font-size: 30px;
+    }
+    .sectionTitle p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sectionPadding {
+        padding-block: 50px;
+    }
+    .banner_text h1 {
+        font-size: 32px;
+    }
+    .sectionTitle h2 {
+        font-size: 24px;
+    }
 }
