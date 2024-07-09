@@ -316,6 +316,9 @@ button.sendBtn {
     .banner_text {
         padding-block: 70px;
     }
+    .btn {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 991.98px) {
