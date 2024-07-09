@@ -179,9 +179,14 @@ button:focus{
 }	
 .countCard h3 {
     font-size: 40px;
-    color: #000;
+    color: var(--secondaryColor);
     font-weight: 700;
     margin-bottom: 12px;
+}
+.countCard p {
+    font-size: 16px;
+    color: var(--textColor);
+    font-weight: 400;
 }
 
 /* App Link Section */
@@ -189,6 +194,7 @@ button:focus{
 	display: flex;
 	gap: 16px;
 	margin-top: 30px;
+    flex-flow: wrap;
 }
 .appLink_btn {
     background: rgba(255, 255, 255, 0.1);
@@ -199,6 +205,7 @@ button:focus{
     border-radius: 5px;
     width: 185px;
     justify-content: center;
+    white-space: nowrap;
 }
 .appLink_btn i {
     font-size: 20px;
@@ -258,6 +265,29 @@ button.sendBtn {
 .copyright {
     border-top: 1px solid #ddd;
 }
+.copyright p {
+    font-size: 14px;
+    color: var(--textColor);
+}
+
+
+/* Content Pages */
+.contentPage {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.contentPage h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    margin-bottom: 8px;
+}
+.contentPage p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--textColor);
+    margin-bottom: 16px;
+}
 
 @media (max-width: 1199.98px) {
     .sectionPadding {
@@ -276,9 +306,19 @@ button.sendBtn {
     .cardTitle {
         font-size: 16px;
     }
+
+    .footerContent h4 {
+        font-size: 16px;
+    }
+    .site_banner {
+        height: auto;
+    }
+    .banner_text {
+        padding-block: 70px;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     .siteHeader .navbar-toggler svg {
         width: 30px;
         height: 30px;
@@ -319,6 +359,9 @@ button.sendBtn {
     .sectionTitle p {
         font-size: 15px;
     }
+    .countCard h3 {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -330,5 +373,9 @@ button.sendBtn {
     }
     .sectionTitle h2 {
         font-size: 24px;
+    }
+    .footerContent h4 {
+        margin-bottom: 12px;
+        margin-top: 16px;
     }
 }
