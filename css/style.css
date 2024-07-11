@@ -276,7 +276,7 @@ button.sendBtn {
     max-width: 1050px;
     margin: 0 auto;
 }
-.contentPage h4 {
+.contentPage h5  {
     font-size: 24px;
     font-weight: 600;
     color: var(--secondaryColor);
